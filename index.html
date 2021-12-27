@@ -5,14 +5,18 @@
   <meta charset="utf-8">
   <style>
     a {color:red;}
+    h1 {font-size: 40px; text-align:center;}
+    .saw {color:black;}
+    #active {color:blue;}
   </style>
+  <!-style에서의 순서도 중요하다. 밑으로 내려갈수록 우선순위가 높음
+     id선택자와 class선택자가 붙으면 id선택자가 이긴다.-->
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html"
-         style="color:red;text-decoration:underline">CSS</a></li>
+    <li><a href="1.html" class="saw">HTML</a></li>
+    <li><a href="2.html" class="saw" id="active">CSS</a></li>
     <li><a href="3.html">JAVASCRIPT</a></li>
   </ol>
   <p>
